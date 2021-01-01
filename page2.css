@@ -1,0 +1,48 @@
+p.page2 { 
+
+  margin-left:1em;
+  text-indent:40px;
+  color:MidnightBlue;
+  line-height: 1.6;
+  
+  
+}
+table.page2,th.page2,td.page2 {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width:100%;
+  table-layout:fixed;
+  background-color:Teal;
+  color:white;
+  color-hr:blue;
+  line-height: 1.6;
+  
+}
+th.page2, td.page2 {
+  padding: 30px;
+  
+}
+
+     
+    hr.page2{
+        height:1px;
+        background-color:MidnightBlue;
+        border: yes;
+    }
+
+h1.page2 { 
+        margin-left:0px;
+      border:2px solid MidnightBlue;
+      padding:40px;
+      text-align:center;
+      color:#6666ff;
+      border-radius:20px;
+      background: linear-gradient(to right, #ff9900 0%, #ccffff 100%);
+      line-height:85px
+  
+}
+
+h2.page2 {
+
+   color:#8F148D;
+   margin-left:0.7em;

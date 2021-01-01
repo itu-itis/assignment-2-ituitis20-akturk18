@@ -1,0 +1,48 @@
+h1.page5 {
+	margin-left:0px;
+    	border:2px solid MidnightBlue;
+    	padding:40px;
+    	text-align:center;
+    	color:#6666ff;
+    	border-radius:20px;
+    	background: linear-gradient(to right, #ff9900 0%, #ccffff 100%);
+    	line-height:85px;
+}
+
+
+div.page5
+   {
+      float:center;
+      margin-top:100px;
+      border-radius:10px;
+      background-color:#ffcc99;
+      display: inline-block;
+      margin-left:40px;
+      margin-right:430px;
+      line-height:40px;
+      position:absolute;
+     
+      
+}
+p.page5 {
+margin-left:5px;
+text-indent:40px;
+margin-right:20px;
+font-style:italic;
+margin-top:5px;
+line-height: 1.6;
+}
+
+h2.page5 { 
+  position:absolute;
+  margin: 0 auto;
+  border-radius:10px;
+  text-align:center;
+  display: inline-block;
+  margin-top:-5px;
+  margin-left:475px;
+  padding:20px;
+  background: linear-gradient(to right, #ff9900 0%, #ccffff 100%);
+
+}
+

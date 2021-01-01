@@ -1,0 +1,92 @@
+
+
+img.flag{width:100px;height:85px;float:right;}
+
+img.icon{width:100px;height:85px;float:left;}
+
+
+body {
+
+
+	height:100%;
+    
+  	background:linear-gradient(to bottom, #0099cc 0%, #ff99cc 100%);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+h1.i { 
+	text-align:right;
+	font-size:12px;
+}
+
+h2.i {    font-size:40px;
+	margin-left:0px;
+    	border:2px solid MidnightBlue;
+    	padding:40px;
+    	text-align:center;
+    	color:#6666ff;
+    	border-radius:15px;
+    	background: linear-gradient(to right, #ff9900 0%, #ccffff 100%);
+    	line-height:85px;
+    
+
+}
+
+
+table.i, th.i, td.i {
+   
+  border: 2px solid MidnightBlue;
+  border-collapse:collapse;
+  border-radius:0px;
+  background:linear-gradient(to right, #ff9900 0%, #ccffff 100%);
+} 
+
+th.i,td.i {padding: 5px;
+  text-align: center;  
+  
+}
+
+a.i:link, a.i:visited {
+  background-color:linear-gradient(to right, #ff9900 0%, #ccffff 100%);
+  color:purple;
+  border: 2px linear-gradient(to right, #ff9900 0%, #ccffff 100%);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: underline;
+ 
+}
+
+a.i:hover, a.i:active {
+  background-color: green;
+  color: white;
+}
+a.i:active {
+  color: red;
+}
+
+.page{
+  display:none;
+}
+
+#page1:target{
+  display:block;
+}
+
+#page2:target{
+  display:block;
+}
+
+#page3:target{
+  display:block;
+}
+
+#page4:target{
+  display:block;
+}
+
+#page5:target{
+  display:block;
+}

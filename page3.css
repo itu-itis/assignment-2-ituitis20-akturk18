@@ -1,0 +1,31 @@
+p.page2 {
+
+   margin-left: 1em;
+   color:MidnightBlue;
+   font-size:20px;
+   line-height: 1.6;
+}
+
+h1.page3 {margin-left:0px;
+    	border:2px solid MidnightBlue;
+    	padding:40px;
+    	text-align:center;
+    	color:#6666ff;
+    	border-radius:20px;
+    	background: linear-gradient(to right, #ff9900 0%, #ccffff 100%);
+    	line-height:85px;
+
+}
+   
+
+h2.page3 {
+   text-align:center;
+}     
+
+ol.page3 {
+   background-color:#FF8C00;
+   width:25%;
+   text-align:center;
+   margin-left:650px;
+   border-radius:20px;
+}
