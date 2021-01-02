@@ -1,0 +1,35 @@
+p.page6 {
+
+   margin-left: 1em;
+   color:MidnightBlue;
+   font-size:20px;
+   line-height: 1.6;
+}
+
+
+table.page6, th.page6, td.page6 {
+   
+  border: 2px solid MidnightBlue;
+  border-collapse:collapse;
+  border-radius:0px;
+  background:linear-gradient(to right, #33ccff 0%, #33cc33 100%);
+} 
+
+th.page6,td.page6 {padding: 5px;
+  text-align: center;  
+  
+}
+
+  div.page6{
+      display: none;
+    }
+
+    input.birinci:checked ~ div.birinci {
+      display: block;
+    }
+
+    input.ikinci:checked ~ div.ikinci {
+      display: block;
+    }
+
+
