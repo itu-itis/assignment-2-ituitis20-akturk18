@@ -20,16 +20,6 @@ th.page6,td.page6 {padding: 5px;
   
 }
 
-  div.page6{
-      display: none;
-    }
 
-    input.birinci:checked ~ div.birinci {
-      display: block;
-    }
-
-    input.ikinci:checked ~ div.ikinci {
-      display: block;
-    }
 
 
