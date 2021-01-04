@@ -165,79 +165,119 @@ I graduated from my high school in 2018 and I enrolled ITU preparation school th
 
 <p class="page6">Teachers:</p>
 
-<table class="page6" style="width:50%;">
+<table class="page6" id="firsttable" style="width:50%;">
  <tr class="page6">
     <th class="page6">Teacher Name</th>
     <th class="page6">Subject</th>
     <th class="page6">Cluster</th>
 
+</tr>
 
 </table>
+
+ <form id="form1">
+  <label for="subject"><b>Subject:<b></label>
+  <input type="text" id="subject" name="subject">
+  <label for="names">Teacher Name:</label>
+  <input type="text" id="names" name="names">
+  <label for="cluster">Cluster:</label>
+<select id="cluster" name="cluster">
+  <option value="sayısal">SAY</option>
+  <option value="sözel">SOZ</option>
+  <option value="eşit">EA</option>
+  
+</select>
+  <input type="button" style="background-color:grey;color:dark;" name="firstbutton" id="firstbutton" value="Add" onclick="AddRow()">
+
+</form>
+
 <br><br>
 
 <p class="page6">Sport Teams:</p>
 
-<table class="page6" style="width:50%;">
+
+
+<table class="page6" id="secondtable" style="width:50%;">
  <tr class="page6">
     <th class="page6">Sports Type</th>
     <th class="page6">Team Name</th>
+</tr>
 
 </table>
 
 
-<br><br>
- 
 
+<form id="form2">
 
-
-
-
-<form action="/action_page.php">
-
-
-
-<input id="Add Teacher" class="birinci" style="background-color:grey;color:dark;" name="chooseSubmit" type="button" value="Add Teacher" />
-
-
-<input id="Add Team" class="ikinci" style="background-color:grey;color:dark;" name="chooseSubmit" type="button" value="Add Team" />
-
-<br><br>
-
-<div class="page6 birinci">
-  <label for="fname"><b>Subject:<b></label>
-  <input type="text" id="fname" name="fname">
-  <label for="lname">Teacher Name:</label>
-  <input type="text" id="lname" >
-  <label for="lname">Cluster:</label>
-  <select id="cluster" name="clusters">
-    <option value="SAY">SAY</option>
-    <option value="SOZ">SOZ</option>
-    <option value="EA">EA</option>
-    <option value="DIL">DIL</option>
-  </select>
-<input type="submit" value="Add" style="background-color:pink;color:dark;">
-</div>
-
-</form> 
-
-<br><br>
- <div class="page6 ikinci">
-
-<form action="/action_page.php">
-  <label for="fname"><b>Sports Type:<b></label>
-  <select id="Sports Type" name="Sports Type">
+  <label for="sportsname"><b>Sports Type:<b></label>
+  <select id="sporttypes" name="Sports Type">
    <option value="Table Tennis">Table tennis</option>
     <option value="Football">Football</option>
     <option value="Basketball">Basketball</option>
     </select>
     
-    <label for="lname">Team Name:</label>
+    <label for="teamname">Team Name:</label>
     
-    <input type="text" id="lname" name="lname">
+    <input type="text" id="teamname" name="teamname">
     
-  <input type="submit" value="Add" style="background-color:pink;color:dark;">
-</div>
+  <input type="button" value="Add" name="secondbutton" id="secondbutton" onclick="AddRow2()" style="background-color:grey;color:dark;">
+
 </form> 
+
+
+<script>
+
+
+		function AddRow(){
+
+			var names;
+			var subject;
+			var cluster;
+
+			var AddRown = document.getElementById('firsttable');
+			var NewRow = AddRown.insertRow(1);
+
+			names = document.getElementById("names").value;
+			subject = document.getElementById("subject").value;
+			cluster = document.getElementById("cluster").value;
+
+			var cel1 = NewRow.insertCell(0);
+			var cel2 = NewRow.insertCell(1);
+			var cel3 = NewRow.insertCell(2);
+
+			cel1.innerHTML = names;
+			cel2.innerHTML = subject;
+
+function AddRow2(){
+
+			var sporttypes;
+			var teamname;
+
+			var AddRown = document.getElementById('secondtable');
+			var NewRow = AddRown.insertRow(1);
+
+			sporttypes = document.getElementById("sporttypes").value;
+			teamname = document.getElementById("teamname").value;
+
+			var cel1 = NewRow.insertCell(0);
+			var cel2 = NewRow.insertCell(1);
+
+			cel1.innerHTML = sporttypes;
+			cel2.innerHTML = teamname;
+
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+
 
  </div>
 
