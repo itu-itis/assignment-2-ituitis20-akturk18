@@ -187,7 +187,6 @@ I graduated from my high school in 2018 and I enrolled ITU preparation school th
   <option value="eşit">EA</option>
   
 </select>
-  <input type="button" style="background-color:grey;color:dark;" name="firstbutton" id="firstbutton" value="Add Teacher" onclick="AddRow()">
 
 </form>
 
@@ -219,10 +218,18 @@ I graduated from my high school in 2018 and I enrolled ITU preparation school th
     <label for="teamname">Team Name:</label>
     
     <input type="text" id="teamname" name="teamname">
-    
-  <input type="button" value="Add Team" name="secondbutton" id="secondbutton" onclick="AddRow2()" style="background-color:grey;color:dark;">
+
 
 </form> 
+
+
+<br><br><br>
+
+
+
+  <input type="button" style="background-color:grey;color:dark;" name="firstbutton" id="firstbutton" value="Add Teacher" onclick="AddRow()">
+    
+  <input type="button" value="Add Team" name="secondbutton" id="secondbutton" onclick="AddRow2()" style="background-color:grey;color:dark;">
 
 
 <script>
@@ -247,6 +254,8 @@ I graduated from my high school in 2018 and I enrolled ITU preparation school th
 
 			cel1.innerHTML = names;
 			cel2.innerHTML = subject;
+			cel3.innerHTML = cluster;
+
 
 document.getElementById(form1).reset();
 		}
@@ -271,7 +280,6 @@ function AddRow2(){
 
 document.getElementById(form2).reset();
 		}
-
 
 
 
