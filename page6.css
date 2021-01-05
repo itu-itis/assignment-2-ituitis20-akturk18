@@ -1,4 +1,4 @@
-p.page6 {
+p.page6{
 
    margin-left: 1em;
    color:MidnightBlue;
@@ -7,7 +7,7 @@ p.page6 {
 }
 
 
-table.page6, th.page6, td.page6 {
+div.t table,div.t th,div.t td {
    
   border: 2px solid MidnightBlue;
   border-collapse:collapse;
@@ -15,11 +15,16 @@ table.page6, th.page6, td.page6 {
   background:linear-gradient(to right, #33ccff 0%, #33cc33 100%);
 } 
 
-th.page6,td.page6 {padding: 5px;
+ div.t th,div.t td{padding: 5px;
   text-align: center;  
   
 }
 
+ tr{
+	background-color: white;
+	border-collapse:collapse;
+	border: 2px solid MidnightBlue;
+}
 
 
 
