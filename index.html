@@ -175,20 +175,6 @@ I graduated from my high school in 2018 and I enrolled ITU preparation school th
 
 </table>
 
- <form id="form1">
-  <label for="subject"><b>Subject:</b></label>
-  <input type="text" id="subject" name="subject">
-  <label for="names"><b>Teacher Name:</b></label>
-  <input type="text" id="names" name="names">
-  <label for="cluster"><b>Cluster:</b></label>
-<select id="cluster" name="cluster">
-  <option value="sayısal">SAY</option>
-  <option value="sözel">SOZ</option>
-  <option value="eşit">EA</option>
-  
-</select>
-
-</form>
 
 <br><br>
 
@@ -204,7 +190,10 @@ I graduated from my high school in 2018 and I enrolled ITU preparation school th
 
 </table>
 
-
+<input type="radio" id="teams" value="t" name="sf">
+<label for="teams"><b>Add Team</b></label>
+<input type="radio" id="teacher" value="t" name="sf">
+<label for="teacher"><b>Add Teacher</b></label>
 
 <form id="form2">
 
@@ -218,18 +207,25 @@ I graduated from my high school in 2018 and I enrolled ITU preparation school th
     <label for="teamname"><b>Team Name:</b></label>
     
     <input type="text" id="teamname" name="teamname">
+ <input type="button" name="button" id="button2" style="background-color:grey;color:dark;" value="Add Team" onclick="AddRow2()">
+
+</form>
 
 
-</form> 
-
-
-<br><br><br>
-
-
-
-  <input type="button" style="background-color:grey;color:dark;" name="firstbutton" id="firstbutton" value="Add Teacher" onclick="AddRow()">
-    
-  <input type="button" value="Add Team" name="secondbutton" id="secondbutton" onclick="AddRow2()" style="background-color:grey;color:dark;">
+ <form id="form1">
+  <label for="subject"><b>Subject:</b></label>
+  <input type="text" id="subject" name="subject">
+  <label for="names"><b>Teacher Name:</b></label>
+  <input type="text" id="names" name="names">
+  <label for="cluster"><b>Cluster:</b></label>
+<select id="cluster" name="cluster">
+  <option value="sayısal">SAY</option>
+  <option value="sözel">SOZ</option>
+  <option value="eşit">EA</option>
+  
+</select>
+ <input type="button" name="button" id="button1" style="background-color:grey;color:dark;" value="Add Teacher" onclick="AddRow()">
+</form>
 
 
 <script>
@@ -284,14 +280,6 @@ document.getElementById("form2").reset();
 
 
 	</script>
-
-
-
-
-
-
-
-
 
 
 

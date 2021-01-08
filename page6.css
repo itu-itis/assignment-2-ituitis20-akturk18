@@ -1,3 +1,5 @@
+form {display: none;}
+
 p.page6{
 
    margin-left: 1em;
@@ -20,11 +22,21 @@ div.t table,div.t th,div.t td {
   
 }
 
- tr{
+ tr
+	{
 	background-color: white;
 	border-collapse:collapse;
 	border: 2px solid MidnightBlue;
 }
+
+
+#teacher:checked ~ #form1{display: block;}
+
+
+#teams:checked ~ #form2{display: block;}
+
+
+
 
 
 
