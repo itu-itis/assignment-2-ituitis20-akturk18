@@ -116,13 +116,13 @@
 
 <div class="page" id="page4"><br><br><br><br>
 <h2 class="page4"><i>Location Map</i></h2>
-<a class="page4" href="https://www.google.com/maps/place/41%C2%B002'46.3%22N+28%C2%B059'40.0%22E/@41.0460358,28.9931871,16.25z/data=!4m5!3m4!1s0x0:0x0!8m2!3d41.0461993!4d28.9944299?hl=tr-TR" target="_blank">
+<a class="page4" href="https://www.google.com/maps/place/41%C2%B002'30.3%22N+28%C2%B059'40.0%22E/@41.0300358,28.9931871,16.25z/data=!4m5!3m4!1s0x0:0x0!8m2!3d41.0301993!4d28.9944299?hl=tr-TR" target="_blank">
 <img class= "page4" src="mapping.png" alt="map" style="width:633px;height:476px;margin-left:500px;float:center;">
 </a>
 
 <div class="page4"><p class="page4"><a class="page4" href="http://nuriakin.meb.k12.tr" target="_blank"><i>Original Website</i> </a><br><br>
-   <a class="page4" href="http://nuriakin.meb.k12.tr/tema/eposta/eposta_gonder.php?CHK=146753158155153150155150165210202199147208150151147217215170179172178168166179178165174&KeepThis=true&width=50&height=75&TB_iframe=true" target="_blank"><i>Send Us an Email</i></a><br><br>
-    0212 246 44 17 <br><br>
+   <a class="page4" href="http://nuriakin.meb.k12.tr/tema/eposta/eposta_gonder.php?CHK=130753158155153150155150165410204199147208150151147417415170179174178168166179178165174&KeepThis=true&width=50&height=75&TB_iframe=true" target="_blank"><i>Send Us an Email</i></a><br><br>
+    0412 230 44 17 <br><br>
  <i>Adress: Maçka Cad. No8 Şişli-İSTANBUL</i> <br><br>
 <i>Transportation:Our School is located in the district center of Şişli,
  one of the central districts of Istanbul.<br>
@@ -163,37 +163,9 @@ I graduated from my high school in 2018 and I enrolled ITU preparation school th
 
 <div class="page t" id="page6">
 
-<p class="page6"><b>Teachers:</b></p>
 
-<table class="page6" id="firsttable" style="width:50%;">
- <tr class="page6">
-    <th class="page6">Teacher Name</th>
-    <th class="page6">Subject</th>
-    <th class="page6">Cluster</th>
-
-</tr>
-
-</table>
-
-
-<br><br>
-
-<p class="page6"><b>Sport Teams:</b></p>
-
-
-
-<table class="page6" id="secondtable" style="width:50%;">
- <tr class="page6">
-    <th class="page6">Sports Type</th>
-    <th class="page6">Team Name</th>
-</tr>
-
-</table>
-
-<input type="radio" id="teams" value="t" name="sf">
-<label for="teams"><b>Add Team</b></label>
-<input type="radio" id="teacher" value="t" name="sf">
-<label for="teacher"><b>Add Teacher</b></label>
+<input type="button" class="w" name="button" id="at" value="Add Teacher" onclick="AT()">
+<input type="button" class="w" name="button" id="as" value="Add Team" onclick="AS()">
 
 <form id="form2">
 
@@ -227,9 +199,39 @@ I graduated from my high school in 2018 and I enrolled ITU preparation school th
  <input type="button" name="button" id="button1" style="background-color:grey;color:dark;" value="Add Teacher" onclick="AddRow()">
 </form>
 
+<div id ="alltables">
+
+<p class="page6"><b>Teachers:</b></p>
+
+<table class="page6" id="firsttable" style="width:50%;">
+ <tr class="page6">
+    <th class="page6">Teacher Name</th>
+    <th class="page6">Subject</th>
+    <th class="page6">Cluster</th>
+
+</tr>
+
+</table>
+
+
+<br><br>
+
+<p class="page6"><b>Sport Teams:</b></p>
+
+
+
+<table class="page6" id="secondtable" style="width:50%;">
+ <tr class="page6">
+    <th class="page6">Sports Type</th>
+    <th class="page6">Team Name</th>
+</tr>
+
+</table></div>
 
 <script>
 
+	var gd = document.getElementById("alltables").style;
+	gd.marginTop = "70px";
 
 		function AddRow(){
 
@@ -238,19 +240,21 @@ I graduated from my high school in 2018 and I enrolled ITU preparation school th
 			var cluster;
 
 			var AddRown = document.getElementById('firsttable');
-			var NewRow = AddRown.insertRow(1);
 
 			names = document.getElementById("names").value;
 			subject = document.getElementById("subject").value;
 			cluster = document.getElementById("cluster").value;
 
+			if (names && subject){
+
+			var NewRow = AddRown.insertRow(1);
 			var cel1 = NewRow.insertCell(0);
 			var cel2 = NewRow.insertCell(1);
 			var cel3 = NewRow.insertCell(2);
 
 			cel1.innerHTML = names;
 			cel2.innerHTML = subject;
-			cel3.innerHTML = cluster;
+			cel3.innerHTML = cluster;}
 
 
 document.getElementById("form1").reset();
@@ -262,22 +266,63 @@ function AddRow2(){
 			var teamname;
 
 			var AddRown = document.getElementById('secondtable');
-			var NewRow = AddRown.insertRow(1);
 
 			sporttypes = document.getElementById("sporttypes").value;
 			teamname = document.getElementById("teamname").value;
 
+			if(teamname){
+			var NewRow = AddRown.insertRow(1);
 			var cel1 = NewRow.insertCell(0);
 			var cel2 = NewRow.insertCell(1);
 
 			cel1.innerHTML = sporttypes;
-			cel2.innerHTML = teamname;
+			cel2.innerHTML = teamname;}
 
 
 document.getElementById("form2").reset();
 		}
 
+		function AT(){
+			var form1 = document.getElementById("form1");
+			var form2 = document.getElementById("form2");
+			var at = document.getElementById("at");
+			var as = document.getElementById("as");
+			if (form1.style.display == "" || form1.style.display == "none"){
+				if (form2.style.display == "" || form2.style.display == "none"){
+					gd.marginTop = parseInt(gd.marginTop) - 41 + "px";
+				}
+				form1.style.display = "block";
+				form2.style.display = "none";
+				at.style.backgroundColor = "grey";
+				as.style.backgroundColor = "white";
+			}else if (form1.style.display === "block"){
+				form1.style.display = "none";
+				at.style.backgroundColor = "white";
+				as.style.backgroundColor = "white";
+				gd.marginTop = parseInt(gd.marginTop) + 41 + "px";		
+			}
+		}
 
+		function AS(){
+			var form1 = document.getElementById("form1");
+			var form2 = document.getElementById("form2");
+			var at = document.getElementById("at");
+			var as = document.getElementById("as");
+			if (form2.style.display == "" || form2.style.display == "none"){
+				if (form1.style.display == "" || form1.style.display == "none"){
+					gd.marginTop = parseInt(gd.marginTop) - 41 + "px";
+				}
+				form2.style.display = "block";
+				form1.style.display = "none";
+				as.style.backgroundColor = "grey";
+				at.style.backgroundColor = "white";
+			}else if (form2.style.display === "block"){
+				form2.style.display = "none";
+				as.style.backgroundColor = "white";
+				at.style.backgroundColor = "white";		
+				gd.marginTop = parseInt(gd.marginTop) + 41 + "px";		
+			}
+		}
 
 	</script>
 
