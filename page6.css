@@ -29,10 +29,11 @@ td{background-color:#ffccff;border: 2px solid MidnightBlue;
 
 
 
-#teacher:checked ~ #form1{display: block;}
+input.w{background-color: white;}
 
+#form1, #form2{margin-top: 20px;}
 
-#teams:checked ~ #form2{display: block;}
+.fr{float:right;}
 
 
 
